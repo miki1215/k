@@ -1,0 +1,9 @@
+set -o vi
+alias vi='vim'
+alias ll='ls -lah'
+alias k=kubectl
+alias kap="kubectl apply -f"
+alias kad="kubectl delete -f"
+export EDITOR='vim'
+source <(kubectl completion bash)
+complete -o default -F __start_kubectl k
